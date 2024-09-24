@@ -57,11 +57,23 @@ class Database:
         self.create_table()
 
     def create_table(self):
-        self.cursor.execute('CREATE TABLE IF NOT EXISTS Architectures (ArchitectureID CHAR(15) NOT NULL PRIMARY KEY, CreationDateTime TEXT, ModelType TEXT, ModelName TEXT, Architecture TEXT, AdditionalInfo TEXT')
+        self.cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Architectures (
+            ArchitectureID CHAR(15) NOT NULL PRIMARY KEY,
+            CreationDateTime TEXT,
+            ModelType TEXT,
+            ModelName TEXT,
+            Architecture TEXT,
+            AdditionalInfo TEXT
+        )
+        ''')
         self.conn.commit()
 
     def add_architecture(self, arch_id, creation_time, model_type, model_name, architecture, additional_info):
-        self.cursor.execute('INSERT INTO Architectures (ArchitectureID, CreationDateTime, ModelType, ModelName, Architecture, AdditionalInfo) VALUES (?, ?, ?, ?, ?, ?)', (arch_id, creation_time, model_type, model_name, architecture, additional_info))
+        self.cursor.execute('''
+        INSERT INTO Architectures (ArchitectureID, CreationDateTime, ModelType, ModelName, Architecture, AdditionalInfo)
+        VALUES (?, ?, ?, ?, ?, ?)
+        ''', (arch_id, creation_time, model_type, model_name, architecture, additional_info))
         self.conn.commit()
 
     def get_all_architectures(self):
