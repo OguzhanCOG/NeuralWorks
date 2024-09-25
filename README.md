@@ -10,6 +10,8 @@ Please feel free to send feedback on issues and ideas, other than the ones menti
 
 Enjoy!
 
+Feedback? motions.07-busses@icloud.com
+
 # Future Updates
 Version 1.0.1:
 
