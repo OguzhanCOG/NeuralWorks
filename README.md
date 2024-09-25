@@ -3,7 +3,18 @@ NeuralWorks is a comprehensive toolkit for building, training, and running custo
 
 The ultimate goal is to make the system unbreakable, to allow more people without ML background to get familiar with architectire design and build their own models. Ideally, I would love this to expand to LLMs and more advanced model creation.
 
+# Requirements
+
+  - Python 3.10.11 or newer
+  - PyTorch (torch) 1.12.0 or newer
+  - Torchvision (torchvision) 0.13.0 or newer
+  - PIL (Pillow) 9.2.0 or newer
+
 # Try NeuralWorks
+To initialise your environment, download 'requirements.txt' and run:
+
+  - pip install -r requirements.txt
+
 Download the 'nw.py' script or copy the code into your favourite IDE.
 
 Please feel free to send feedback on issues and ideas, other than the ones mentioned.
