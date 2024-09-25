@@ -38,7 +38,11 @@ Release Date: soon™
 
 Version 1.0.2:
 
-- No changes planned yet.
+- Precision/sensitivity and PSNR/SSIM metrics for classification and image processing.
+- Analytic data collection (optional): model architecture, metrics, system performance, etc.
+- Additional bug fixes and toughened error/edge case handling system.
+
+More planned for the future.
 
 Release Date: N/A
 
