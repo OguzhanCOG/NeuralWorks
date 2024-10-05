@@ -46,6 +46,14 @@ Version 1.0.2:
 - Analytic data collection (optional): model architecture, metrics, system performance, etc.
 - Additional bug fixes and toughened error/edge case handling system.
 - NeuralWorksCustom Framework Integration to provide an alternative to PyTorch. (https://github.com/OguzhanCOG/NWCustom/)
+- Input sanitisation to mitigate risks associated with eval() function usage.
+- User authentication and authorisation for multi-user environments.
+- Encryption of sensitive data stored in the SQLite database.
+- Secure error handling to prevent information leakage with proper exception management and user-friendly error messages
+- Improved input validation for all user inputs to prevent unexpected behavior.
+- Performance optimisations for handling large datasets and complex models.
+- GUI implementation option for users who prefer graphical interfaces.
+- Refactored system environment and source code.
 
 More planned for the future.
 
